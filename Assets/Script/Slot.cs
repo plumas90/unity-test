@@ -15,8 +15,8 @@ public class Slot : MonoBehaviour
     //[SerializeField] private Inventory inventory;
     [SerializeField] public TextMeshProUGUI Isequip;
     //플레이어 정보
-    [SerializeField]
-    private Player_stats player;
+    //[SerializeField]
+    //private Player_stats player;
 
     void Start()
     {

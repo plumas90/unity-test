@@ -15,6 +15,11 @@ public class GameManager : MonoBehaviour
     public GameObject StatusUI;
     public Player_stats player;
 
+    public GameObject ShopUiOpen;
+    public GameObject ShopUiClose;
+
+
+
     public static GameManager Instance;
     // Start is called before the first frame update
     private void Awake()

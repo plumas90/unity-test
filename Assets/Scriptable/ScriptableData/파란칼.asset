@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d9014e575c1d92c49a113d39052ea3a4, type: 3}
-  m_Name: "\uBB34\uAE301"
+  m_Name: "\uD30C\uB780\uCE7C"
   m_EditorClassIdentifier: 
-  itemName: "\uBB34\uAE301"
+  itemName: "\uD30C\uB780\uCE7C"
   itemType: 0
   itemImage: {fileID: 21300000, guid: 2f328900fae1aca48aa5a740ac503cc1, type: 3}
   itemPrefab: {fileID: 0}
@@ -20,5 +20,6 @@ MonoBehaviour:
   atk: 5
   Def: 0
   hp: 0
-  Isequip: 0
-  itemDesc: "\uACF5\uACA9\uB825\uC774 5 \uC62C\uB77C\uAC11\uB2C8\uB2E4"
+  Isequip: 1
+  itemDesc: "\uACF5\uACA9\uB825\uC774 5 \uC62C\uB77C\uAC11\uB2C8\uB2E4 \n\uC5B4\uB514\uC11C
+    \uB9CE\uC774 \uBCF8\uAC83 \uCC98\uB7FC \uC0DD\uACBC\uB2E4"

@@ -34,12 +34,16 @@ public class Inventory : MonoBehaviour
     {
         I = this;
         //UpdateUI();
-        player = player.GetComponent<Player_stats>();
+        //player = player.GetComponent<Player_stats>();
 
         slots = slotsGrid.GetComponentsInChildren<Slot>();
         for (int i = 0; i < slots.Length; i++)
         {
             slots[i].index = i;
+            if (slots[i].item != null)
+            {
+                slots[i].item.Isequip = false;
+            }
         }
 
     }
@@ -59,19 +63,8 @@ public class Inventory : MonoBehaviour
         {
             if (slots[i].item != null)
             {
-                if (slots[i].item.Isequip)
-                {
-                    slots[i].Isequip.text = "E";
-                    slots[i].item.Isequip = true;
-                }
-
-                else
-                {
-                    slots[i].Isequip.text = string.Empty;
                     slots[i].item.Isequip = false;
-                }
-
-            }
+           }
         }
     }
 
