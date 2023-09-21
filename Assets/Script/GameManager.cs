@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -12,24 +13,23 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI PlayerHPText;
     public TextMeshProUGUI PlayerCriticalText;
     public GameObject StatusUI;
-    public static Player_stats _player_stats = new();
+    public Player_stats player;
 
     public static GameManager Instance;
     // Start is called before the first frame update
     private void Awake()
     {
         Instance = this;
-        //_player_stats = new Player_stats();
     }
     void Start()
     {
-
+        PlayerStatUpdate();
     }
 
     // Update is called once per frame
     void Update()
     {
-        UIUpdate();
+       
     }
     public void StatusOpen() 
     {
@@ -39,12 +39,12 @@ public class GameManager : MonoBehaviour
     {
         StatusUI.SetActive(false);
     }
-    private void UIUpdate()
+    public void PlayerStatUpdate()
     {
-        PlayerGoldText.text = _player_stats.Gold.ToString();
-        PlayerHPText.text = _player_stats.Hp.ToString();
-        PlayerAtkText.text = _player_stats.Atk.ToString();
-        PlayerDefText.text = _player_stats.Def.ToString();
-        PlayerCriticalText.text = _player_stats.Critical.ToString();
+        PlayerGoldText.text = player.Gold.ToString();
+        PlayerHPText.text = player.Hp.ToString();
+        PlayerAtkText.text = player.Atk.ToString();
+        PlayerDefText.text = player.Def.ToString();
+        PlayerCriticalText.text = player.Critical.ToString();
     }
 }

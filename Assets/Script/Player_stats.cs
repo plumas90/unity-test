@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class Player_stats : MonoBehaviour
 {
-    public int Hp { get; private set; }
-    public int Atk { get; private set; }
-    public int Def { get; private set; }
-    public int Critical { get; private set; }
+    public float Hp;
+    public float Atk;
+    public float Def;
+    public float Critical;
 
-    public int Gold { get; private set; }
-
+    public float Gold;
+    public Player_stats player;
 
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -25,7 +24,7 @@ public class Player_stats : MonoBehaviour
     }
     public Player_stats() 
     {
-        Hp = 100; Atk = 35; Def = 40; Critical = 25; Gold = 20000;
+        Hp = 100f; Atk = 35f; Def = 40f; Critical = 25f; Gold = 20000f;
     }
     public Player_stats(int hp, int atk, int def, int critical, int gold)
     {
