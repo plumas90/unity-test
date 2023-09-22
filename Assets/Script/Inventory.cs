@@ -23,19 +23,26 @@ public class Inventory : MonoBehaviour
     public TextMeshProUGUI infomationName;
     public TextMeshProUGUI infomationDescrption;
     public bool IsInfo;
-    public static Inventory I;
+    public static Inventory I= null;
     public int index;
     public Slot targetSlot;
 
     //½½·Ôµé
+    
     private Slot[] slots;
     //public Slot[] uiSlots;
-    void Start()
+    private void Awake()
     {
-        I = this;
-        //UpdateUI();
-        //player = player.GetComponent<Player_stats>();
-
+        if (null == I)
+        {
+            I = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+        InventoryPopup.SetActive(false);
         slots = slotsGrid.GetComponentsInChildren<Slot>();
         for (int i = 0; i < slots.Length; i++)
         {
@@ -45,6 +52,14 @@ public class Inventory : MonoBehaviour
                 slots[i].item.Isequip = false;
             }
         }
+        UpdateUI();
+    }
+    void Start()
+    {
+        //UpdateUI();
+        //player = player.GetComponent<Player_stats>();
+
+
 
     }
     public void OpenIventoryBtn()

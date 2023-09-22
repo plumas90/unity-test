@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9014e575c1d92c49a113d39052ea3a4, type: 3}
+  m_Name: "\uBE68\uAC04 \uBB34\uC5B8\uAC00"
+  m_EditorClassIdentifier: 
+  itemName: "\uBE68\uAC04 \uBB34\uC5B8\uAC00"
+  itemType: 0
+  itemImage: {fileID: 21300000, guid: ebbb5e607e2cb514898d7c5fbe353408, type: 3}
+  itemPrefab: {fileID: 3339415343724334968, guid: ff14b26bfd79e7049a26d3c2db722ff9, type: 3}
+  itemBuyCost: 10
+  atk: 5
+  Def: 1
+  hp: 1
+  Isequip: 0
+  itemDesc: "\uBB54\uC9C4 \uBAA8\uB974\uACA0\uC9C0\uB9CC \uAC00\uC131\uBE44\uAC00
+    \uC88B\uC2B5\uB2C8\uB2E4."

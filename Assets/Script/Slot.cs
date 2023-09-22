@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using Unity.VisualScripting.ReorderableList;
+using static Item;
 
 public class Slot : MonoBehaviour
 {
@@ -21,14 +22,7 @@ public class Slot : MonoBehaviour
     void Start()
     {
         //player = GameManager.Instance.player;
-        if (item == null)
-        {
-            ClearSlot();
-        }
-        else
-        {
-            itemImage.sprite = item.itemImage;
-        }
+        SlotUpdate();
 
     }
     //æ∆¿Ã≈€ »πµÊ
@@ -52,5 +46,15 @@ public class Slot : MonoBehaviour
             Inventory.I.OpenInformation(this);
         }
     }
-
+    public void SlotUpdate() 
+    {
+        if (item == null)
+        {
+            ClearSlot();
+        }
+        else
+        {
+            itemImage.sprite = item.itemImage;
+        }
+    }
 }
