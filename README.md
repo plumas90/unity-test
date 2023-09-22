@@ -11,4 +11,5 @@ ui익숙해지기
 검1을 장착시 모든 검의 isEquip이 true가 되버리는 버그가 생겨버렸다 
 
 시간이 아쉬웠던 프로젝트
-![Uploading 캡처.JPG…]()
+
+![캡처](https://github.com/plumas90/unity-test/assets/129154514/f2cf2e26-6553-4776-a097-701a9c481639)
